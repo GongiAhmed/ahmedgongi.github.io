@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projects — Ahmed Gongi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI, ML, NLP, and Computer Vision projects by Ahmed Gongi.">
+    <link rel="icon" type="image/x-icon" href="img/meee.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">AG.</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <span class="section-label">My Work</span>
+            <h1 class="section-title">Selected <span class="gradient-text">Projects</span></h1>
+            <p class="section-subtitle">End-to-end AI solutions from research to deployment.</p>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <!-- Filters -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="llm">LLM / GenAI</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="bigdata">Big Data</button>
+                <button class="filter-btn" data-filter="timeseries">Time Series</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid stagger-children" id="projectsGrid">
+
+                <!-- 1. CV Extractor -->
+                <div class="project-card" data-category="llm">
+                    <div class="project-card-header">
+                        <div class="project-icon gen-ai"><i class="fas fa-file-alt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/CV_extractor" target="_blank" title="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>CV Extractor with Open-Source LLMs</h3>
+                        <p>Intelligent CV extraction system using LLaMA 3, Mistral, and Qwen2 via Ollama. Processes
+                            scanned and text-based PDFs with OCR. Evaluated with precision, recall, and F1-score.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">LLaMA 3</span>
+                        <span class="tech-tag">Mistral</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">OCR</span>
+                    </div>
+                </div>
+
+                <!-- 2. Sentiment Analysis LLaMA -->
+                <div class="project-card" data-category="llm nlp">
+                    <div class="project-card-header">
+                        <div class="project-icon nlp"><i class="fas fa-brain"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Sentiment-Analysis/tree/main" target="_blank"
+                                title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Sentiment Analysis with Fine-Tuned LLaMA 3</h3>
+                        <p>Fine-tuned an 8B LLaMA 3 model using QLoRA for financial sentiment classification, achieving
+                            86.1% accuracy. Classified news headlines into positive, neutral, or negative.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">LLaMA 3</span>
+                        <span class="tech-tag">QLoRA</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Hugging Face</span>
+                    </div>
+                </div>
+
+                <!-- 3. Industrial Forecasting -->
+                <div class="project-card" data-category="timeseries ml">
+                    <div class="project-card-header">
+                        <div class="project-icon backend"><i class="fas fa-chart-area"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Supplyzpro-Project" target="_blank" title="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Industrial Production Forecasting</h3>
+                        <p>Forecasted monthly US industrial production using ARIMA, SARIMA, Prophet, and Chronos.
+                            Achieved best MAPE of 0.009 with Chronos, demonstrating superior time series capture.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">ARIMA</span>
+                        <span class="tech-tag">Prophet</span>
+                        <span class="tech-tag">Chronos</span>
+                        <span class="tech-tag">Time Series</span>
+                    </div>
+                </div>
+
+                <!-- 4. Facebook Scraper -->
+                <div class="project-card" data-category="nlp ml">
+                    <div class="project-card-header">
+                        <div class="project-icon devops"><i class="fas fa-spider"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Facebook-Scraper" target="_blank" title="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Facebook Scraper & Toxicity Analyzer</h3>
+                        <p>FastAPI service integrating Detoxify and MongoDB for automated toxicity analysis. Scraped
+                            Facebook posts via Selenium and BeautifulSoup with background processing.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Detoxify</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Selenium</span>
+                    </div>
+                </div>
+
+                <!-- 5. Malaria Detection -->
+                <div class="project-card" data-category="cv">
+                    <div class="project-card-header">
+                        <div class="project-icon cv"><i class="fas fa-microscope"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Malaria-detection/tree/main" target="_blank"
+                                title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Malaria Detection in Cell Images</h3>
+                        <p>CNN model to classify microscopic blood smear images, distinguishing between malaria-infected
+                            and uninfected cells. Achieved 88.06% test accuracy with data augmentation.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Image Classification</span>
+                    </div>
+                </div>
+
+                <!-- 6. Pneumonia Detection -->
+                <div class="project-card" data-category="cv">
+                    <div class="project-card-header">
+                        <div class="project-icon cv"><i class="fas fa-lungs"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Pneumonia-Detection/tree/main" target="_blank"
+                                title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Pneumonia Detection from Chest X-rays</h3>
+                        <p>Multi-output CNN with TensorFlow/Keras for pneumonia detection (72.50% accuracy) and
+                            infection localization. Combined classification-regression architecture.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">Multi-Output</span>
+                    </div>
+                </div>
+
+                <!-- 7. Toxic Comment Classification -->
+                <div class="project-card" data-category="nlp">
+                    <div class="project-card-header">
+                        <div class="project-icon nlp"><i class="fas fa-shield-alt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Toxic-Comment-Classification" target="_blank"
+                                title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Toxic Comment Classification</h3>
+                        <p>Three approaches for toxic comment classification, including GloVe with LSTM, achieving up to
+                            97.87% accuracy and 0.46 F1-score with preprocessing and tokenization.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">GloVe</span>
+                        <span class="tech-tag">LSTM</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Text Classification</span>
+                    </div>
+                </div>
+
+                <!-- 8. Insurance Premiums -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon ml"><i class="fas fa-hand-holding-usd"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Regression-with-an-Insurance-Dataset" target="_blank"
+                                title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Predicting Insurance Premiums</h3>
+                        <p>Regression models (CatBoost, LightGBM, XGBoost) for insurance premium prediction. Achieved
+                            RMSLE of 1.045 with LightGBM through advanced feature engineering.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">CatBoost</span>
+                        <span class="tech-tag">LightGBM</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">Regression</span>
+                    </div>
+                </div>
+
+                <!-- 9. Click-Through Rate -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-card-header">
+                        <div class="project-icon ml"><i class="fas fa-mouse-pointer"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/Click-Through-Rate-Prediction" target="_blank"
+                                title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Click-Through Rate Prediction</h3>
+                        <p>Preprocessed a large ad impressions dataset, addressing outliers and class imbalance.
+                            Achieved 91% accuracy, 86% recall, and 97% precision with Random Forest.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">Classification</span>
+                        <span class="tech-tag">Feature Engineering</span>
+                    </div>
+                </div>
+
+                <!-- 10. NFL PySpark -->
+                <div class="project-card" data-category="bigdata ml">
+                    <div class="project-card-header">
+                        <div class="project-icon prog"><i class="fas fa-football-ball"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/GongiAhmed/NFL-Prediction" target="_blank" title="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>NFL Yardage Prediction with PySpark</h3>
+                        <p>EDA on NFL Bowl 2020 dataset using PySpark. Built ML pipelines and achieved RMSE of 6.2 with
+                            a tuned Random Forest model for yardage prediction.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">PySpark</span>
+                        <span class="tech-tag">Big Data</span>
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">ML Pipeline</span>
+                    </div>
+                </div>
+
+                <!-- 11. Multimodal Biometric -->
+                <div class="project-card" data-category="cv ml">
+                    <div class="project-card-header">
+                        <div class="project-icon gen-ai"><i class="fas fa-fingerprint"></i></div>
+                        <div class="project-links"></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Multimodal Biometric Authentication</h3>
+                        <p>Robust authentication system using autoencoders and Siamese networks. Combines facial
+                            recognition and voice recognition for accurate and secure user verification.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="tech-tag">Autoencoders</span>
+                        <span class="tech-tag">Siamese Networks</span>
+                        <span class="tech-tag">Biometric</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/GongiAhmed" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-gongi-2815b3232" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:contact.gongiahmed@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 <a href="#">Ahmed Gongi</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
